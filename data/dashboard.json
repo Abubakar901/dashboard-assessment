@@ -1,0 +1,122 @@
+{
+  "categories": [
+    {
+      "id": "cspm",
+      "name": "CSPM Executive Dashboard",
+      "tab": "CSPM",
+      "widgets": [
+        {
+          "id": "cloud-accounts",
+          "name": "Cloud Accounts",
+          "type": "donut",
+          "active": true,
+          "data": {
+            "total": 2,
+            "segments": [
+              { "label": "Connected", "value": 2, "color": "#5b7cff" },
+              { "label": "Not Connected", "value": 2, "color": "#e3e9ff" }
+            ]
+          }
+        },
+        {
+          "id": "cloud-risk",
+          "name": "Cloud Account Risk Assessment",
+          "type": "donut",
+          "active": true,
+          "data": {
+            "total": 9659,
+            "segments": [
+              { "label": "Failed", "value": 1689, "color": "#b91c1c" },
+              { "label": "Warning", "value": 681, "color": "#f8d63a" },
+              { "label": "Not available", "value": 36, "color": "#cbd0de" },
+              { "label": "Passed", "value": 7253, "color": "#1fa85f" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cwpp",
+      "name": "CWPP Dashboard",
+      "tab": "CWPP",
+      "widgets": [
+        {
+          "id": "namespace-alerts",
+          "name": "Top 5 Namespace Specific Alerts",
+          "type": "empty",
+          "data": null,
+          "active": true
+        },
+        {
+          "id": "workload-alerts",
+          "name": "Workload Alerts",
+          "type": "empty",
+          "data": null,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "registry",
+      "name": "Registry Scan",
+      "tab": "Image",
+      "widgets": [
+        {
+          "id": "image-risk",
+          "name": "Image Risk Assessment",
+          "type": "bar",
+          "active": true,
+          "data": {
+            "total": 1470,
+            "totalLabel": "Total Vulnerabilities",
+            "segments": [
+              { "label": "Critical", "value": 9, "color": "#7a1410" },
+              { "label": "High", "value": 150, "color": "#d0311f" },
+              { "label": "Medium", "value": 770, "color": "#ee9534" },
+              { "label": "Low", "value": 540, "color": "#f4c542" },
+              { "label": "Unknown", "value": 1, "color": "#aaaaaa" }
+            ]
+          }
+        },
+        {
+          "id": "image-issues",
+          "name": "Image Security Issues",
+          "type": "bar",
+          "active": true,
+          "data": {
+            "total": 2,
+            "totalLabel": "Total Images",
+            "segments": [
+              { "label": "Critical", "value": 2, "color": "#7a1410" },
+              { "label": "High", "value": 2, "color": "#d0311f" },
+              { "label": "Medium", "value": 2, "color": "#ee9534" },
+              { "label": "Low", "value": 1, "color": "#f4c542" },
+              { "label": "Unknown", "value": 1, "color": "#aaaaaa" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ticket",
+      "name": "Ticket Overview",
+      "tab": "Ticket",
+      "widgets": [
+        {
+          "id": "open-tickets",
+          "name": "Open Tickets",
+          "type": "text",
+          "data": "14 open tickets across all teams.",
+          "active": false
+        },
+        {
+          "id": "sla-breaches",
+          "name": "SLA Breaches",
+          "type": "text",
+          "data": "3 tickets are past their SLA this week.",
+          "active": false
+        }
+      ]
+    }
+  ]
+}
